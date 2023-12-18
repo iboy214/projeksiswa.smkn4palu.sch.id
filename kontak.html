@@ -114,7 +114,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
-<link rel='stylesheet' id='pagelayer-frontend-css' href='https://smkn3bandung.sch.id/wp-content/plugins/pagelayer/css/givecss.php?give=pagelayer-frontend.css%2Cnivo-lightbox.css%2Canimate.min.css%2Cowl.carousel.min.css%2Cowl.theme.default.min.css%2Cfont-awesome5.min.css&#038;premium&#038;ver=1.7.8' media='all' />
+<link rel='stylesheet' id='pagelayer-frontend-css' href='style.css' media='all' />
 <style id='wp-emoji-styles-inline-css'>
 
 img.wp-smiley, img.emoji {
@@ -141,11 +141,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='popularfx-style-css' href='profil.css' media='all' />
-<link rel='stylesheet' id='popularfx-sidebar-css' href='sidebar.css' media='all' />
-<script src="script.js" id="jquery-core-js"></script>
-<script src="script.js" id="jquery-migrate-js"></script>
-<script src="script.js" id="pagelayer-frontend-js"></script>
 
 <link rel='stylesheet' id='popularfx-style-css' href='profil.css' media='all' />
 <link rel='stylesheet' id='popularfx-sidebar-css' href='sidebar.css' media='all' />
@@ -153,8 +148,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script src="js.js" id="jquery-migrate-js"></script>
 <script src="https://smkn3bandung.sch.id/wp-content/plugins/pagelayer/js/givejs.php?give=pagelayer-frontend.js%2Cnivo-lightbox.min.js%2Cwow.min.js%2Cjquery-numerator.js%2CsimpleParallax.min.js%2Cowl.carousel.min.js&amp;premium&amp;ver=1.7.8" id="pagelayer-frontend-js"></script>
 <meta name="generator" content="WordPress 6.4.2" />
-<link rel="canonical" href="smk4.html" />
-<link rel='shortlink' href='smk4.html' />
+<link rel="canonical" href="kontak.html" />
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="logo.jpg" sizes="32x32" />
 <link rel="icon" href="logo.jpg" sizes="192x192" />
 <link rel="apple-touch-icon" href="logo.jpg" />
@@ -256,12 +250,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       <div class="menu-academy-header-menu-container"><ul id="2" class="pagelayer-wp_menu-ul"><li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-206"><a href="index.html"><span class="pagelayer-nav-menu-title">Home</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-206"></div></li>
 <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26"><a href="profil.html"><span class="pagelayer-nav-menu-title">Profil</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-26"></div>
 <ul class="sub-menu">
-  <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="extra_kulikuler.html"><span class="pagelayer-nav-menu-title">Extrak Kulikuler</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-24"></div></li>
 <ul class="sub-menu">
 </ul>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="extra_kulikuler.html"><span class="pagelayer-nav-menu-title">Extrak Kulikuler</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-24"></div></li>
 </ul>
 </li>
-<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="galeri.html"><span class="pagelayer-nav-menu-title">Galery</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-24"></div></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="galeri.html"><span class="pagelayer-nav-menu-title">Gallery</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-24"></div></li>
 <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="info.html"><span class="pagelayer-nav-menu-title">Informasi</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-25"></div></li>
 <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-21 current_page_item menu-item-27"><a href="kontak.html" aria-current="page"><span class="pagelayer-nav-menu-title">Kontak</span></a><div class="pagelayer-mega-menu pagelayer-mega-editor-27"></div></li>
 </ul></div>
@@ -312,7 +306,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </style><div class="pagelayer-heading-holder">
 
 
-Gallery</div>
+Kontak</div>
   
     </div><div pagelayer-id="9nd8527" class="p-9nd8527 pagelayer-divider">
 <style pagelayer-style-id="9nd8527">.p-9nd8527 .pagelayer-divider-seperator{border-top-style: solid;border-top-color: #6200ea;border-top-width: 3px;width: 10%}
@@ -336,57 +330,230 @@ Gallery</div>
     
     
     
-   
-<style>
-  div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  }
-  div img {
-      width: 400px;
-      height: 300px;
-      border: 2px solid #ff3d0036;
-      border-radius: 13px;
-      box-shadow: 4px 7px 7px 0px #00000042;
-      cursor: pointer;
-      margin: 10px;
-      transition: 400ms;
-  }
-  div img:hover {
-      filter: grayscale(1);
-      transform: scale(1.03);
-  }
-</style>
-  <div>
-      <img src="1.jpg" alt="">
-      <img src="2.jpg" alt="">
-      <img src="3.jpg" alt="">
-      <img src="4.jpg" alt="">
-      <img src="5.jpg" alt="">
-      <img src="6.jpg" alt="">
-      <img src="7.jpg" alt="">
-      <img src="8.jpg" alt="">
-      <img src="9.jpg" alt="">
-      <img src="10.jpg" alt="">
-      <img src="11.jpg" alt="">
-      <img src="12.jpg" alt="">
-      <img src="13.jpg" alt="">
-      <img src="14.jpg" alt="">
-      <img src="15.jpg" alt="">
-      <img src="16.jpg" alt="">
-      <img src="17.jpg" alt="">
-      <img src="18.jpg" alt="">
-      <img src="19.jpg" alt="">
-      <img src="20.jpg" alt="">
-      <img src="21.jpg" alt="">
-      <img src="22.jpg" alt="">
-      <img src="23.jpg" alt="">
-      
-  </div>
-      
     
+    <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto"><div pagelayer-id="p148215" class="p-p148215 pagelayer-col pagelayer-col-2">
+<style pagelayer-style-id="p148215">.p-p148215 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-p148215 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder">
+</div></div><div pagelayer-id="cef7526" class="p-cef7526 pagelayer-col pagelayer-col-8">
+<style pagelayer-style-id="cef7526">.p-cef7526 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-cef7526 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder"><div pagelayer-id="ci02717" class="p-ci02717 pagelayer-heading fadeInDown pagelayer-wow" align="center">
+<style pagelayer-style-id="ci02717">.p-ci02717{text-align: center;-webkit-animation-delay: 600ms; animation-delay: 600ms}
+.p-ci02717 .pagelayer-heading-holder *{color:#111111;font-family: Muli !important; font-size: 40px !important; font-style:  !important; font-weight:  !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-ci02717 .pagelayer-heading-holder{color:#111111;font-family: Muli !important; font-size: 40px !important; font-style:  !important; font-weight:  !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+@media (max-width: 360px){.p-ci02717 .pagelayer-heading-holder *{font-family:  !important; font-size: 40px !important; font-style:  !important; font-weight:  !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-ci02717 .pagelayer-heading-holder{font-family:  !important; font-size: 40px !important; font-style:  !important; font-weight:  !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+}
+</style><div class="pagelayer-heading-holder">
+
+
+Get In Touch</div>
+  
+    </div><div pagelayer-id="w0v6056" class="p-w0v6056 pagelayer-divider">
+<style pagelayer-style-id="w0v6056">.p-w0v6056 .pagelayer-divider-seperator{border-top-style: solid;border-top-color: #6200ea;border-top-width: 3px;width: 14%}
+.p-w0v6056 .pagelayer-divider-holder{padding-top: 10px; padding-bottom: 10px;text-align: center}
+@media (max-width: 768px) and (min-width: 361px){.p-w0v6056 .pagelayer-divider-seperator{width: 10%}
+}
+@media (max-width: 360px){.p-w0v6056 .pagelayer-divider-seperator{width: 20%}
+}
+</style><div class="pagelayer-divider-holder">
+    <span class="pagelayer-divider-seperator"></span>
+  </div></div><div pagelayer-id="1fd9054" class="p-1fd9054 pagelayer-contact fadeInUp pagelayer-wow">
+<style pagelayer-style-id="1fd9054">.p-1fd9054 .pagelayer-contact-form{text-align: center}
+.p-1fd9054 label{padding-top:px; padding-right:px; padding-bottom:10px; padding-left:px}
+.p-1fd9054 ::placeholder{font-family: Noto Sans !important; font-size: 14px !important; font-style:  !important; font-weight: 500 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-1fd9054 input, .p-1fd9054 select, .p-1fd9054 textarea{padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;-webkit-transition: all 400ms; transition: all 400ms}
+.p-1fd9054 input[type="checkbox"] + label:before, .p-1fd9054 input[type="radio"]{height:10px; min-height:10px;  width:10px}
+.p-1fd9054 input:focus, .p-1fd9054 select:focus, .p-1fd9054 textarea:focus{border-style: solid;border-color: #6200ea;border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.p-1fd9054 .pagelayer-btn-text{font-family: Muli; font-size: 14px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-1fd9054 .pagelayer-btn-holder{font-family: Muli; font-size: 14px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important;padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;background-color: rgba(9,134,192,0.00);color: #6200ea;-webkit-transition: all 400ms !important; transition: all 400ms !important;border-style: solid;border-color: #6200ea;border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;border-radius: 0px 0px 0px 0px; -webkit-border-radius:  0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px}
+.p-1fd9054 .pagelayer-btn-holder:hover{background-color: #6200ea;color: #ffffff}
+.p-1fd9054{-webkit-animation-delay: 600ms; animation-delay: 600ms}
+</style><div class="pagelayer-contact-form-div pagelayer-contact-form-holder">
+        <div class="pagelayer-message-box pagelayer-message-top"></div>
+        
+        <form class="pagelayer-contact-form" id="contact-form" name="Contact Form" onsubmit="return pagelayer_contact_submit(this, event)" method="POST">
+          <div class="pagelayer-contact-holder"><div pagelayer-id="7kn2440" class="p-7kn2440 pagelayer-contact_item">
+<style pagelayer-style-id="7kn2440">.p-7kn2440{width:45%;display:inline-block;padding-top:0px; padding-right:10px; padding-bottom:10px; padding-left:0px}
+</style><input type="text" placeholder="Name" name="name" /></div><div pagelayer-id="0qc5747" class="p-0qc5747 pagelayer-contact_item">
+<style pagelayer-style-id="0qc5747">.p-0qc5747{width:45%;display:inline-block;padding-top:0px; padding-right:0px; padding-bottom:10px; padding-left:10px}
+</style><input type="text" placeholder="Email" name="name" /></div><div pagelayer-id="oxo9216" class="p-oxo9216 pagelayer-contact_item">
+<style pagelayer-style-id="oxo9216">.p-oxo9216{width:90%;display:inline-block;padding-top:0px; padding-right:0px; padding-bottom:10px; padding-left:0px}
+</style><input type="text" placeholder="Subject" name="name" /></div><div pagelayer-id="bkw9213" class="p-bkw9213 pagelayer-contact_item">
+<style pagelayer-style-id="bkw9213">.p-bkw9213{width:90%;display:inline-block;padding-top:0px; padding-right:0px; padding-bottom:10px; padding-left:0px}
+</style><textarea name="name" rows="6" placeholder="Message"></textarea></div></div>
+          <input type="hidden" name="cfa-pagelayer-id" />
+          <input type="hidden" name="cfa-post-id" value="8838" />
+          
+          
+          
+          <div class="pagelayer-contact-submit-holder">
+            <button type="submit" form="contact-form" class="pagelayer-contact-submit-btn pagelayer-btn-holder pagelayer-ele-link pagelayer-btn-custom pagelayer-btn-custom {{icon_position}}">
+              <i class="fa fa-circle-o-notch fa-spin" style="display:none;margin-right:5px;"></i>
+              
+              <span class="pagelayer-btn-text">Send Message</span>
+              
+            </button>
+          </div>
+        </form>
+        <div class="pagelayer-message-box pagelayer-message-bottom"></div>
+    </div></div></div></div><div pagelayer-id="9e43009" class="p-9e43009 pagelayer-col pagelayer-col-2">
+<style pagelayer-style-id="9e43009">.p-9e43009 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-9e43009 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder">
+</div></div></div></div>
+<div pagelayer-id="sw53950" class="p-sw53950 pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
+<style pagelayer-style-id="sw53950">.p-sw53950 .pagelayer-col-holder{padding: 10px}
+.p-sw53950 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+.p-sw53950 .pagelayer-svg-top .pagelayer-shape-fill{fill:#227bc3}
+.p-sw53950 .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
+.p-sw53950 .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#e44993}
+.p-sw53950 .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
+.p-sw53950{margin-top: 60px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+</style>
+    
+    
+    
+    
+    <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto"><div pagelayer-id="owh8989" class="p-owh8989 pagelayer-col pagelayer-col-4 fadeInLeft pagelayer-wow">
+<style pagelayer-style-id="owh8989">.p-owh8989 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-owh8989 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+.p-owh8989{-webkit-animation-delay: 600ms; animation-delay: 600ms}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder"><div pagelayer-id="ssr4516" class="p-ssr4516 pagelayer-iconbox">
+<style pagelayer-style-id="ssr4516">.p-ssr4516 .pagelayer-service-icon i{padding: calc(0.5em + 16px);color:#ffffff;-webkit-transition: all 400ms; transition: all 400ms}
+.p-ssr4516 .pagelayer-service-icon.pagelayer-service-stacked i{background-color:#6200ea}
+.p-ssr4516 .pagelayer-service-icon{font-size:30px}
+.p-ssr4516 .pagelayer-service-heading{text-align:center;padding-top:10px; padding-right:0px; padding-bottom:10px; padding-left:0px;color:#000000;font-family: Muli; font-size: 24px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important;-webkit-transition: all 400ms; transition: all 400ms}
+.p-ssr4516 .pagelayer-service-details{text-align:center}
+.p-ssr4516 .pagelayer-service-btn{-webkit-transition: all 400ms; transition: all 400ms}
+</style><div class="pagelayer-service-container pagelayer-service-align-top pagelayer-service-vertical-{{service_vertical_alignment}}">
+    <div class="pagelayer-service-icon pagelayer-service-stacked">
+      <i class="fas fa-map-marker-alt pagelayer-icon-circle pagelayer-animation-{{anim_hover}}" aria-hidden="true"></i>
+    </div>
+    <div class="pagelayer-service-details">
+      
+        <div class="pagelayer-service-heading">Address</div>
+      
+      <div class="pagelayer-service-text">
+
+
+</div>
+      
+    </div>
+     
+  </div></div><div pagelayer-id="0su2999" class="p-0su2999 pagelayer-address">
+<style pagelayer-style-id="0su2999">.p-0su2999 .pagelayer-address *, .p-0su2999 .pagelayer-address{font-family: Noto Sans; font-size: 14px !important; font-style:  !important; font-weight: 500 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: 1.4em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-0su2999 .pagelayer-address-holder{justify-content: center}
+.p-0su2999{margin-top: -10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+.p-0su2999 .pagelayer-address{text-align:center;}
+</style><div class="pagelayer-address-holder">
+    <span class="pagelayer-address-icon"><i class=""></i></span>
+    <span class="pagelayer-address">Jln. Totosi, No.08, Kel. Duyu, Kec. Tatanga Kota Palu (Jalan Arah Vila Doda) </span>
+  </div></div></div></div><div pagelayer-id="bl16875" class="p-bl16875 pagelayer-col pagelayer-col-4 fadeInUp pagelayer-wow">
+<style pagelayer-style-id="bl16875">.p-bl16875 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-bl16875 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+.p-bl16875{-webkit-animation-delay: 600ms; animation-delay: 600ms}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder"><div pagelayer-id="myl5602" class="p-myl5602 pagelayer-iconbox">
+<style pagelayer-style-id="myl5602">.p-myl5602 .pagelayer-service-icon i{padding: calc(0.5em + 16px);color:#ffffff;-webkit-transition: all 400ms; transition: all 400ms}
+.p-myl5602 .pagelayer-service-icon.pagelayer-service-stacked i{background-color:#6200ea}
+.p-myl5602 .pagelayer-service-icon{font-size:30px}
+.p-myl5602 .pagelayer-service-heading{text-align:center;padding-top:10px; padding-right:0px; padding-bottom:10px; padding-left:0px;color:#000000;font-family: Muli; font-size: 24px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important;-webkit-transition: all 400ms; transition: all 400ms}
+.p-myl5602 .pagelayer-service-details{text-align:center}
+.p-myl5602 .pagelayer-service-btn{-webkit-transition: all 400ms; transition: all 400ms}
+@media (max-width: 768px) and (min-width: 361px){.p-myl5602{margin-top: 20px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+}
+@media (max-width: 360px){.p-myl5602{margin-top: 20px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+}
+</style><div class="pagelayer-service-container pagelayer-service-align-top pagelayer-service-vertical-{{service_vertical_alignment}}">
+    <div class="pagelayer-service-icon pagelayer-service-stacked">
+      <i class="fas fa-mobile-alt pagelayer-icon-circle pagelayer-animation-{{anim_hover}}" aria-hidden="true"></i>
+    </div>
+    <div class="pagelayer-service-details">
+      
+        <div class="pagelayer-service-heading">Phone</div>
+      
+      <div class="pagelayer-service-text">
+
+
+</div>
+      
+    </div>
+     
+  </div></div><div pagelayer-id="rjx2923" class="p-rjx2923 pagelayer-phone">
+<style pagelayer-style-id="rjx2923">.p-rjx2923 .pagelayer-phone *, .p-rjx2923 .pagelayer-phone{font-family: Noto Sans; font-size: 14px !important; font-style:  !important; font-weight: 500 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-rjx2923 .pagelayer-phone-holder{justify-content: center}
+.p-rjx2923{margin-top: -5px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+</style><div class="pagelayer-phone-holder">
+    <span class="pagelayer-phone-icon"><i class=""></i></span>
+    
+      <span class="pagelayer-phone">+62 822-7165-5439</span>
+    
+    </div></div></div></div><div pagelayer-id="wmj7587" class="p-wmj7587 pagelayer-col pagelayer-col-4 fadeInRight pagelayer-wow">
+<style pagelayer-style-id="wmj7587">.p-wmj7587 .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
+.p-wmj7587 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
+.p-wmj7587{-webkit-animation-delay: 600ms; animation-delay: 600ms}
+</style>
+      
+      
+      
+      <div class="pagelayer-col-holder"><div pagelayer-id="v4b5979" class="p-v4b5979 pagelayer-iconbox">
+<style pagelayer-style-id="v4b5979">.p-v4b5979 .pagelayer-service-icon i{padding: calc(0.5em + 16px);color:#ffffff;-webkit-transition: all 400ms; transition: all 400ms}
+.p-v4b5979 .pagelayer-service-icon.pagelayer-service-stacked i{background-color:#6200ea}
+.p-v4b5979 .pagelayer-service-icon{font-size:30px}
+.p-v4b5979 .pagelayer-service-heading{text-align:center;padding-top:10px; padding-right:0px; padding-bottom:10px; padding-left:0px;color:#000000;font-family: Muli; font-size: 24px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important;-webkit-transition: all 400ms; transition: all 400ms}
+.p-v4b5979 .pagelayer-service-details{text-align:center}
+.p-v4b5979 .pagelayer-service-btn{-webkit-transition: all 400ms; transition: all 400ms}
+@media (max-width: 768px) and (min-width: 361px){.p-v4b5979{margin-top: 20px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+}
+@media (max-width: 360px){.p-v4b5979{margin-top: 20px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+}
+</style><div class="pagelayer-service-container pagelayer-service-align-top pagelayer-service-vertical-{{service_vertical_alignment}}">
+    <div class="pagelayer-service-icon pagelayer-service-stacked">
+      <i class="fas fa-envelope pagelayer-icon-circle pagelayer-animation-{{anim_hover}}" aria-hidden="true"></i>
+    </div>
+    <div class="pagelayer-service-details">
+      
+        <div class="pagelayer-service-heading">Email</div>
+      
+      <div class="pagelayer-service-text">
+
+
+</div>
+      
+    </div>
+     
+  </div></div><div pagelayer-id="4hd3262" class="p-4hd3262 pagelayer-email">
+<style pagelayer-style-id="4hd3262">.p-4hd3262 .pagelayer-email *, .p-4hd3262 .pagelayer-email{font-family: Noto Sans; font-size: 14px !important; font-style:  !important; font-weight: 500 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+.p-4hd3262 .pagelayer-email-holder{justify-content: center}
+.p-4hd3262{margin-top: -5px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px}
+</style><div class="pagelayer-email-holder">
+    <span class="pagelayer-email-icon"><i class=""></i></span>
+    <span class="pagelayer-email">admin@smkn4palu.sch.id</span>
+      </div>
+    
+    </div></div></div></div></div>
+<div pagelayer-id="rag2893" class="p-rag2893 pagelayer-row pagelayer-row-stretch-full pagelayer-height-default fadeInUp pagelayer-wow">
 <style pagelayer-style-id="rag2893">.p-rag2893 > .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
 .p-rag2893 .pagelayer-svg-top .pagelayer-shape-fill{fill:#227bc3}
 .p-rag2893 .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
@@ -394,6 +561,8 @@ Gallery</div>
 .p-rag2893 .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
 .p-rag2893{margin-top: 60px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;-webkit-animation-delay: 600ms; animation-delay: 600ms}
 </style>
+    
+    
     
     
     
@@ -433,7 +602,7 @@ Gallery</div>
 <style pagelayer-style-id="byl9605">.p-byl9605 .pagelayer-wp-title-heading{font-family: Muli; font-size: 30px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform: Capitalize !important; letter-spacing: px !important; word-spacing: px !important;color:#6200ea;text-align:left;padding: 0px 0px 0px 0px}
 </style><div class="pagelayer-wp-title-content">
     <div class="pagelayer-wp-title-section">
-      <a href="index.html" class="pagelayer-wp-title-link pagelayer-ele-link">
+      <a href="smk4.html" class="pagelayer-wp-title-link pagelayer-ele-link">
         
         <div class="pagelayer-wp-title-holder">
           <div class="pagelayer-wp-title-heading">SMKN 4 Palu</div>

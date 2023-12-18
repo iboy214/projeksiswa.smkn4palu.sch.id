@@ -436,7 +436,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         
 <?php
 // Koneksi ke database
-$dbHost = 'localhost';
+$dbHost = 'https://iboy214.github.io/projeksiswa.smkn4palu.sch.id/info.html';
 $dbUser = 'root'; // Ganti dengan username MySQL Anda
 $dbPass = ''; // Ganti dengan password MySQL Anda
 $dbName = 'berita_db';

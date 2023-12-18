@@ -1,9 +1,9 @@
 <?php
 // Koneksi ke database
 $dbHost = 'localhost';
-$dbUser = 'username'; // Ganti dengan username MySQL Anda
-$dbPass = 'password'; // Ganti dengan password MySQL Anda
-$dbName = 'news_db';
+$dbUser = 'root'; // Ganti dengan username MySQL Anda
+$dbPass = ''; // Ganti dengan password MySQL Anda
+$dbName = 'berita_db';
 
 $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 

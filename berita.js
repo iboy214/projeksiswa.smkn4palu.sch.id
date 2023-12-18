@@ -52,3 +52,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const newsForm = document.getElementById('add-news-form');
+    const newsList = document.getElementById('news-items');
+
+    newsForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(newsForm);
+
+        fetch('save_news.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert(data); // Menampilkan pesan dari PHP (berhasil atau error)
+            if (data.includes("Berita berhasil disimpan!")) {
+                addNewsItem(formData.get('title'), formData.get('content'), formData.get('image'));
+                newsForm.reset();
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    });
+
+    // ... (fungsi addNewsItem dan deleteNewsItem tetap sama)
+});

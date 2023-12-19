@@ -2,7 +2,7 @@
 $servername = "192.168.1.1";
 $username = "berita";
 $password = "sevenlight";
-$dbname = "berita_smk4palu";
+$dbname = "berita_db";
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -9,18 +9,6 @@
     <title>Informasi &#8211; SMKN 4 Palu</title>
 <meta name='robots' content='max-image-preview:large' />
 <script>
-        // Inisialisasi Firebase
-        const firebaseConfig = {
-            apiKey: "AIzaSyAMwFcp80xuESWEfoY2MA3U8yd8Okv-apQ",
-            authDomain: "projeksiswasmkn4palu.firebaseapp.com",
-            databaseURL:" https://projeksiswasmkn4palu-default-rtdb.firebaseio.com",
-            projectId: "projeksiswasmkn4palu",
-            storageBucket: "projeksiswasmkn4palu.appspot.com",
-            appId: "1:968419287836:web:a1bceb02a5b6d713ded0d9",
-            measurementId: "G-CYFYZ407B0"
-        };
-
-    
     var pagelayer_ajaxurl = "https://smkn4palu.sch.id/wp-admin/admin-ajax.php";
     var pagelayer_global_nonce = generateRandomNonce();
     var pagelayer_server_time = 1702386520;
@@ -427,104 +415,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
                 
 
-
-
-
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
-    <script src="berita.js"></script>
-    <script>
-        // Inisialisasi Firebase
-        const firebaseConfig = {
-            apiKey: "AIzaSyAMwFcp80xuESWEfoY2MA3U8yd8Okv-apQ",
-            authDomain: "projeksiswasmkn4palu.firebaseapp.com",
-            databaseURL:" https://projeksiswasmkn4palu-default-rtdb.firebaseio.com",
-            projectId: "projeksiswasmkn4palu",
-            storageBucket: "projeksiswasmkn4palu.appspot.com",
-            appId: "1:968419287836:web:a1bceb02a5b6d713ded0d9",
-            measurementId: "G-CYFYZ407B0"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const database = firebase.database();
-
-        // Tangkap elemen formulir
-        const form = document.getElementById('add-news-form');
-        const titleInput = document.getElementById('title');
-        const contentInput = document.getElementById('content');
-        const imageInput = document.getElementById('image');
-        const newsList = document.getElementById('news-items');
-
-        // Tangani pengiriman formulir
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const title = titleInput.value;
-            const content = contentInput.value;
-            const image = imageInput.files[0];
-
-            // Simpan berita ke Firebase Storage (jika menggunakan gambar)
-            const storageRef = firebase.storage().ref('images/' + image.name);
-            const task = storageRef.put(image);
-
-            task.on('state_changed',
-                function progress(snapshot) {
-                    // Tampilkan progres pengunggahan jika diperlukan
-                },
-                function error(err) {
-                    console.error(err);
-                },
-                function complete() {
-                    // Setelah gambar diunggah, dapatkan URL gambar
-                    task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-                        // Simpan data berita ke Firebase Database
-                        const beritaRef = database.ref('berita');
-                        const newBeritaRef = beritaRef.push();
-                        newBeritaRef.set({
-                            title: title,
-                            content: content,
-                            imageUrl: downloadURL
-                        });
-
-                        // Bersihkan formulir
-                        titleInput.value = '';
-                        contentInput.value = '';
-                        imageInput.value = '';
-
-                        // Tampilkan berita terbaru
-                        tampilkanBerita();
-                    });
-                }
-            );
-        });
-
-        // Fungsi untuk menampilkan berita dari Firebase Database
-        function tampilkanBerita() {
-            const beritaRef = database.ref('berita');
-
-            beritaRef.once('value', function (snapshot) {
-                newsList.innerHTML = ''; // Bersihkan daftar berita sebelum menambahkan yang baru
-
-                snapshot.forEach(function (childSnapshot) {
-                    const berita = childSnapshot.val();
-                    const li = document.createElement('li');
-                    li.innerHTML = `<strong>${berita.title}</strong>: ${berita.content}`;
-                    if (berita.imageUrl) {
-                        const img = document.createElement('img');
-                        img.src = berita.imageUrl;
-                        img.alt = berita.title;
-                        li.appendChild(img);
-                    }
-                    newsList.appendChild(li);
-                });
-            });
-        }
-
-        // Panggil fungsi untuk menampilkan berita saat halaman dimuat
-        tampilkanBerita();
-    </script>
-
-<form action="berita_smk4palu.php" method="post">
+<form action="berita_db.php" method="post">
 <section id="news-form">
 
     <h2>Tambahkan Berita Baru</h2>
@@ -548,13 +439,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         <!-- Berita akan di tambahkan di bagian sini -->
     </ul>
 </section>
-
+                </form>
 
     </div></div></div></div></div></div><aside id="secondary" class="widget-area">
 <section id="search-2" class="widget widget_search">
         </section>
     <section id="recent-posts-2" class="widget widget_recent_entries">
-                </form>
+
 
     
   
